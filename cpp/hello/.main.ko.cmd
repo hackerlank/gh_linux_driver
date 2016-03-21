@@ -1,0 +1,1 @@
+cmd_/home/user/Data/n900/ldd/cpp/hello/main.ko := arm-linux-ld -EL -r   --build-id -o /home/user/Data/n900/ldd/cpp/hello/main.ko /home/user/Data/n900/ldd/cpp/hello/main.o /home/user/Data/n900/ldd/cpp/hello/main.mod.o
