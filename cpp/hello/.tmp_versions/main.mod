@@ -1,2 +1,2 @@
-/home/user/Data/n900/ldd/cpp/hello/main.ko
-/home/user/Data/n900/ldd/cpp/hello/main.o
+/home/steward/Downloads/gh_linux_driver/cpp/hello/main.ko
+/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o

@@ -1,1 +1,0 @@
-cmd_/home/user/Data/n900/ldd/asm/hello/ldd.ko := arm-linux-ld -EL -r   --build-id -o /home/user/Data/n900/ldd/asm/hello/ldd.ko /home/user/Data/n900/ldd/asm/hello/ldd.o /home/user/Data/n900/ldd/asm/hello/ldd.mod.o

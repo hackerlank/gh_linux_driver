@@ -1,30 +1,24 @@
-cmd_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := gcc -Wp,-MD,/home/steward/Downloads/gh_linux_driver/cpp/hello/.main.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/4.9/include -I/home/steward/Downloads/pandora-kernel/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /home/steward/Downloads/pandora-kernel/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -fno-ipa-sra -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -march=armv7-a -mtune=cortex-a8 -msoft-float -Uarm -Wframe-larger-than=1072 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -fno-var-tracking-assignments -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(main)"  -D"KBUILD_MODNAME=KBUILD_STR(main)" -c -o /home/steward/Downloads/gh_linux_driver/cpp/hello/.tmp_main.o /home/steward/Downloads/gh_linux_driver/cpp/hello/main.c
+cmd_/home/steward/Downloads/gh_linux_driver/cpp/char/fops-2.6/main.mod.o := gcc -Wp,-MD,/home/steward/Downloads/gh_linux_driver/cpp/char/fops-2.6/.main.mod.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/4.9/include -I/home/steward/Downloads/pandora-kernel/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /home/steward/Downloads/pandora-kernel/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -fno-ipa-sra -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -march=armv7-a -mtune=cortex-a8 -msoft-float -Uarm -Wframe-larger-than=1072 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -fno-var-tracking-assignments -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(main.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(main)" -DMODULE  -c -o /home/steward/Downloads/gh_linux_driver/cpp/char/fops-2.6/main.mod.o /home/steward/Downloads/gh_linux_driver/cpp/char/fops-2.6/main.mod.c
 
-source_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := /home/steward/Downloads/gh_linux_driver/cpp/hello/main.c
+source_/home/steward/Downloads/gh_linux_driver/cpp/char/fops-2.6/main.mod.o := /home/steward/Downloads/gh_linux_driver/cpp/char/fops-2.6/main.mod.c
 
-deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := \
-  include/linux/init.h \
+deps_/home/steward/Downloads/gh_linux_driver/cpp/char/fops-2.6/main.mod.o := \
+    $(wildcard include/config/module/unload.h) \
+  include/linux/module.h \
+    $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/modules.h) \
-    $(wildcard include/config/hotplug.h) \
-  include/linux/compiler.h \
-    $(wildcard include/config/sparse/rcu/pointer.h) \
-    $(wildcard include/config/trace/branch/profiling.h) \
-    $(wildcard include/config/profile/all/branches.h) \
-    $(wildcard include/config/enable/must/check.h) \
-    $(wildcard include/config/enable/warn/deprecated.h) \
-  include/linux/compiler-gcc.h \
-    $(wildcard include/config/arch/supports/optimized/inlining.h) \
-    $(wildcard include/config/optimize/inlining.h) \
-  include/linux/compiler-gcc4.h \
-  include/linux/device.h \
-    $(wildcard include/config/debug/devres.h) \
-    $(wildcard include/config/numa.h) \
-    $(wildcard include/config/cma.h) \
-    $(wildcard include/config/devtmpfs.h) \
-    $(wildcard include/config/printk.h) \
-    $(wildcard include/config/dynamic/debug.h) \
-    $(wildcard include/config/sysfs/deprecated.h) \
-  include/linux/ioport.h \
+    $(wildcard include/config/unused/symbols.h) \
+    $(wildcard include/config/generic/bug.h) \
+    $(wildcard include/config/kallsyms.h) \
+    $(wildcard include/config/smp.h) \
+    $(wildcard include/config/tracepoints.h) \
+    $(wildcard include/config/tracing.h) \
+    $(wildcard include/config/event/tracing.h) \
+    $(wildcard include/config/ftrace/mcount/record.h) \
+    $(wildcard include/config/constructors.h) \
+    $(wildcard include/config/debug/set/module/ronx.h) \
+  include/linux/list.h \
+    $(wildcard include/config/debug/list.h) \
   include/linux/types.h \
     $(wildcard include/config/uid16.h) \
     $(wildcard include/config/lbdaf.h) \
@@ -37,32 +31,38 @@ deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := \
   include/asm-generic/bitsperlong.h \
   include/linux/posix_types.h \
   include/linux/stddef.h \
+  include/linux/compiler.h \
+    $(wildcard include/config/sparse/rcu/pointer.h) \
+    $(wildcard include/config/trace/branch/profiling.h) \
+    $(wildcard include/config/profile/all/branches.h) \
+    $(wildcard include/config/enable/must/check.h) \
+    $(wildcard include/config/enable/warn/deprecated.h) \
+  include/linux/compiler-gcc.h \
+    $(wildcard include/config/arch/supports/optimized/inlining.h) \
+    $(wildcard include/config/optimize/inlining.h) \
+  include/linux/compiler-gcc4.h \
   /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/posix_types.h \
-  include/linux/kobject.h \
-  include/linux/list.h \
-    $(wildcard include/config/debug/list.h) \
   include/linux/poison.h \
     $(wildcard include/config/illegal/pointer/value.h) \
   include/linux/const.h \
-  include/linux/sysfs.h \
-    $(wildcard include/config/debug/lock/alloc.h) \
-    $(wildcard include/config/sysfs.h) \
-  include/linux/errno.h \
-  arch/arm/include/generated/asm/errno.h \
-  include/asm-generic/errno.h \
-  include/asm-generic/errno-base.h \
-  include/linux/lockdep.h \
-    $(wildcard include/config/lockdep.h) \
-    $(wildcard include/config/lock/stat.h) \
-    $(wildcard include/config/trace/irqflags.h) \
+  include/linux/stat.h \
+  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/stat.h \
+  include/linux/time.h \
+    $(wildcard include/config/arch/uses/gettimeoffset.h) \
+  include/linux/cache.h \
+    $(wildcard include/config/arch/has/cache/line/size.h) \
+  include/linux/kernel.h \
+    $(wildcard include/config/preempt/voluntary.h) \
+    $(wildcard include/config/debug/atomic/sleep.h) \
     $(wildcard include/config/prove/locking.h) \
-    $(wildcard include/config/prove/rcu.h) \
-  include/linux/kobject_ns.h \
-  include/linux/atomic.h \
-    $(wildcard include/config/arch/has/atomic/or.h) \
-    $(wildcard include/config/generic/atomic64.h) \
-  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/atomic.h \
-    $(wildcard include/config/smp.h) \
+    $(wildcard include/config/ring/buffer.h) \
+    $(wildcard include/config/numa.h) \
+    $(wildcard include/config/compaction.h) \
+  /usr/lib/gcc/arm-linux-gnueabihf/4.9/include/stdarg.h \
+  include/linux/linkage.h \
+  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/linkage.h \
+  include/linux/bitops.h \
+  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/bitops.h \
   /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/system.h \
     $(wildcard include/config/arm/lpae.h) \
     $(wildcard include/config/cpu/32v6k.h) \
@@ -73,9 +73,8 @@ deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := \
     $(wildcard include/config/cpu/sa1100.h) \
     $(wildcard include/config/cpu/sa110.h) \
     $(wildcard include/config/cpu/v6.h) \
-  include/linux/linkage.h \
-  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/linkage.h \
   include/linux/irqflags.h \
+    $(wildcard include/config/trace/irqflags.h) \
     $(wildcard include/config/irqsoff/tracer.h) \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
@@ -89,19 +88,6 @@ deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
   include/asm-generic/cmpxchg-local.h \
-  include/asm-generic/atomic-long.h \
-  include/linux/spinlock.h \
-    $(wildcard include/config/debug/spinlock.h) \
-    $(wildcard include/config/generic/lockbreak.h) \
-    $(wildcard include/config/preempt.h) \
-  include/linux/preempt.h \
-    $(wildcard include/config/debug/preempt.h) \
-    $(wildcard include/config/preempt/count.h) \
-    $(wildcard include/config/preempt/notifiers.h) \
-  include/linux/thread_info.h \
-    $(wildcard include/config/compat.h) \
-  include/linux/bitops.h \
-  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/bitops.h \
   include/asm-generic/bitops/non-atomic.h \
   include/asm-generic/bitops/fls64.h \
   include/asm-generic/bitops/sched.h \
@@ -116,6 +102,37 @@ deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := \
   /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
   include/asm-generic/bitops/ext2-atomic-setbit.h \
+  include/linux/log2.h \
+    $(wildcard include/config/arch/has/ilog2/u32.h) \
+    $(wildcard include/config/arch/has/ilog2/u64.h) \
+  include/linux/printk.h \
+    $(wildcard include/config/printk.h) \
+    $(wildcard include/config/dynamic/debug.h) \
+  include/linux/init.h \
+    $(wildcard include/config/hotplug.h) \
+  include/linux/dynamic_debug.h \
+  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/bug.h \
+    $(wildcard include/config/bug.h) \
+    $(wildcard include/config/thumb2/kernel.h) \
+    $(wildcard include/config/debug/bugverbose.h) \
+  include/asm-generic/bug.h \
+    $(wildcard include/config/generic/bug/relative/pointers.h) \
+  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/div64.h \
+  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/cache.h \
+    $(wildcard include/config/arm/l1/cache/shift.h) \
+    $(wildcard include/config/aeabi.h) \
+  include/linux/seqlock.h \
+  include/linux/spinlock.h \
+    $(wildcard include/config/debug/spinlock.h) \
+    $(wildcard include/config/generic/lockbreak.h) \
+    $(wildcard include/config/preempt.h) \
+    $(wildcard include/config/debug/lock/alloc.h) \
+  include/linux/preempt.h \
+    $(wildcard include/config/debug/preempt.h) \
+    $(wildcard include/config/preempt/count.h) \
+    $(wildcard include/config/preempt/notifiers.h) \
+  include/linux/thread_info.h \
+    $(wildcard include/config/compat.h) \
   /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/crunch.h) \
     $(wildcard include/config/arm/thumbee.h) \
@@ -125,31 +142,14 @@ deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := \
   /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
     $(wildcard include/config/cpu/use/domains.h) \
-  include/linux/kernel.h \
-    $(wildcard include/config/preempt/voluntary.h) \
-    $(wildcard include/config/debug/atomic/sleep.h) \
-    $(wildcard include/config/ring/buffer.h) \
-    $(wildcard include/config/tracing.h) \
-    $(wildcard include/config/compaction.h) \
-    $(wildcard include/config/ftrace/mcount/record.h) \
-  /usr/lib/gcc/arm-linux-gnueabihf/4.9/include/stdarg.h \
-  include/linux/log2.h \
-    $(wildcard include/config/arch/has/ilog2/u32.h) \
-    $(wildcard include/config/arch/has/ilog2/u64.h) \
-  include/linux/printk.h \
-  include/linux/dynamic_debug.h \
-  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/bug.h \
-    $(wildcard include/config/bug.h) \
-    $(wildcard include/config/thumb2/kernel.h) \
-    $(wildcard include/config/debug/bugverbose.h) \
-  include/asm-generic/bug.h \
-    $(wildcard include/config/generic/bug.h) \
-    $(wildcard include/config/generic/bug/relative/pointers.h) \
-  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/div64.h \
   include/linux/stringify.h \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
   include/linux/spinlock_types_up.h \
+  include/linux/lockdep.h \
+    $(wildcard include/config/lockdep.h) \
+    $(wildcard include/config/lock/stat.h) \
+    $(wildcard include/config/prove/rcu.h) \
   include/linux/rwlock_types.h \
   include/linux/spinlock_up.h \
   /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/processor.h \
@@ -159,75 +159,20 @@ deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := \
   /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/hw_breakpoint.h \
   include/linux/rwlock.h \
   include/linux/spinlock_api_up.h \
-  include/linux/kref.h \
-  include/linux/wait.h \
-  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/current.h \
-  include/linux/klist.h \
-  include/linux/mutex.h \
-    $(wildcard include/config/debug/mutexes.h) \
-    $(wildcard include/config/have/arch/mutex/cpu/relax.h) \
-  include/linux/pm.h \
-    $(wildcard include/config/pm.h) \
-    $(wildcard include/config/pm/sleep.h) \
-    $(wildcard include/config/pm/runtime.h) \
-    $(wildcard include/config/pm/clk.h) \
-    $(wildcard include/config/pm/generic/domains.h) \
-  include/linux/workqueue.h \
-    $(wildcard include/config/debug/objects/work.h) \
-    $(wildcard include/config/freezer.h) \
-  include/linux/timer.h \
-    $(wildcard include/config/timer/stats.h) \
-    $(wildcard include/config/debug/objects/timers.h) \
-  include/linux/ktime.h \
-    $(wildcard include/config/ktime/scalar.h) \
-  include/linux/time.h \
-    $(wildcard include/config/arch/uses/gettimeoffset.h) \
-  include/linux/cache.h \
-    $(wildcard include/config/arch/has/cache/line/size.h) \
-  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/cache.h \
-    $(wildcard include/config/arm/l1/cache/shift.h) \
-    $(wildcard include/config/aeabi.h) \
-  include/linux/seqlock.h \
+  include/linux/atomic.h \
+    $(wildcard include/config/arch/has/atomic/or.h) \
+    $(wildcard include/config/generic/atomic64.h) \
+  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/atomic.h \
+  include/asm-generic/atomic-long.h \
   include/linux/math64.h \
-  include/linux/jiffies.h \
-  include/linux/timex.h \
-  include/linux/param.h \
-  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/param.h \
-    $(wildcard include/config/hz.h) \
-  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/timex.h \
-  arch/arm/mach-omap2/include/mach/timex.h \
-  arch/arm/plat-omap/include/plat/timex.h \
-    $(wildcard include/config/omap/32k/timer.h) \
-    $(wildcard include/config/omap/32k/timer/hz.h) \
-  include/linux/debugobjects.h \
-    $(wildcard include/config/debug/objects.h) \
-    $(wildcard include/config/debug/objects/free.h) \
-  include/linux/threads.h \
-    $(wildcard include/config/nr/cpus.h) \
-    $(wildcard include/config/base/small.h) \
-  include/linux/completion.h \
-  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/device.h \
-    $(wildcard include/config/dmabounce.h) \
-    $(wildcard include/config/iommu/api.h) \
-    $(wildcard include/config/arm/dma/use/iommu.h) \
-    $(wildcard include/config/arch/omap.h) \
-  include/linux/pm_wakeup.h \
-  include/linux/module.h \
-    $(wildcard include/config/unused/symbols.h) \
-    $(wildcard include/config/kallsyms.h) \
-    $(wildcard include/config/tracepoints.h) \
-    $(wildcard include/config/event/tracing.h) \
-    $(wildcard include/config/module/unload.h) \
-    $(wildcard include/config/constructors.h) \
-    $(wildcard include/config/debug/set/module/ronx.h) \
-  include/linux/stat.h \
-  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/stat.h \
   include/linux/kmod.h \
   include/linux/gfp.h \
     $(wildcard include/config/kmemcheck.h) \
     $(wildcard include/config/highmem.h) \
     $(wildcard include/config/zone/dma.h) \
     $(wildcard include/config/zone/dma32.h) \
+    $(wildcard include/config/pm/sleep.h) \
+    $(wildcard include/config/cma.h) \
   include/linux/mmzone.h \
     $(wildcard include/config/force/max/zoneorder.h) \
     $(wildcard include/config/memory/hotplug.h) \
@@ -248,6 +193,11 @@ deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := \
     $(wildcard include/config/nodes/span/other/nodes.h) \
     $(wildcard include/config/holes/in/zone.h) \
     $(wildcard include/config/arch/has/holes/memorymodel.h) \
+  include/linux/wait.h \
+  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/current.h \
+  include/linux/threads.h \
+    $(wildcard include/config/nr/cpus.h) \
+    $(wildcard include/config/base/small.h) \
   include/linux/numa.h \
     $(wildcard include/config/nodes/shift.h) \
   include/linux/nodemask.h \
@@ -286,6 +236,13 @@ deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := \
     $(wildcard include/config/memory/hotremove.h) \
     $(wildcard include/config/have/arch/nodedata/extension.h) \
   include/linux/notifier.h \
+  include/linux/errno.h \
+  arch/arm/include/generated/asm/errno.h \
+  include/asm-generic/errno.h \
+  include/asm-generic/errno-base.h \
+  include/linux/mutex.h \
+    $(wildcard include/config/debug/mutexes.h) \
+    $(wildcard include/config/have/arch/mutex/cpu/relax.h) \
   include/linux/rwsem.h \
     $(wildcard include/config/rwsem/generic/spinlock.h) \
   include/linux/rwsem-spinlock.h \
@@ -317,6 +274,27 @@ deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := \
   include/linux/mmdebug.h \
     $(wildcard include/config/debug/vm.h) \
     $(wildcard include/config/debug/virtual.h) \
+  include/linux/workqueue.h \
+    $(wildcard include/config/debug/objects/work.h) \
+    $(wildcard include/config/freezer.h) \
+  include/linux/timer.h \
+    $(wildcard include/config/timer/stats.h) \
+    $(wildcard include/config/debug/objects/timers.h) \
+  include/linux/ktime.h \
+    $(wildcard include/config/ktime/scalar.h) \
+  include/linux/jiffies.h \
+  include/linux/timex.h \
+  include/linux/param.h \
+  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/param.h \
+    $(wildcard include/config/hz.h) \
+  /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/timex.h \
+  arch/arm/mach-omap2/include/mach/timex.h \
+  arch/arm/plat-omap/include/plat/timex.h \
+    $(wildcard include/config/omap/32k/timer.h) \
+    $(wildcard include/config/omap/32k/timer/hz.h) \
+  include/linux/debugobjects.h \
+    $(wildcard include/config/debug/objects.h) \
+    $(wildcard include/config/debug/objects/free.h) \
   include/linux/sysctl.h \
   include/linux/rcupdate.h \
     $(wildcard include/config/rcu/torture/test.h) \
@@ -328,12 +306,17 @@ deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := \
     $(wildcard include/config/tiny/preempt/rcu.h) \
     $(wildcard include/config/debug/objects/rcu/head.h) \
     $(wildcard include/config/preempt/rt.h) \
+  include/linux/completion.h \
   include/linux/rcutiny.h \
     $(wildcard include/config/rcu/boost.h) \
   include/linux/elf.h \
   include/linux/elf-em.h \
   /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/elf.h \
   /home/steward/Downloads/pandora-kernel/arch/arm/include/asm/user.h \
+  include/linux/kobject.h \
+  include/linux/sysfs.h \
+  include/linux/kobject_ns.h \
+  include/linux/kref.h \
   include/linux/moduleparam.h \
     $(wildcard include/config/alpha.h) \
     $(wildcard include/config/ia64.h) \
@@ -348,7 +331,9 @@ deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o := \
     $(wildcard include/config/arm/unwind.h) \
   include/trace/events/module.h \
   include/trace/define_trace.h \
+  include/linux/vermagic.h \
+  include/generated/utsrelease.h \
 
-/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o: $(deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o)
+/home/steward/Downloads/gh_linux_driver/cpp/char/fops-2.6/main.mod.o: $(deps_/home/steward/Downloads/gh_linux_driver/cpp/char/fops-2.6/main.mod.o)
 
-$(deps_/home/steward/Downloads/gh_linux_driver/cpp/hello/main.o):
+$(deps_/home/steward/Downloads/gh_linux_driver/cpp/char/fops-2.6/main.mod.o):

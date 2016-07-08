@@ -1,2 +1,2 @@
-/home/user/Data/n900/ldd/cpp/char/reg-2.4/main.ko
-/home/user/Data/n900/ldd/cpp/char/reg-2.4/main.o
+/home/steward/Downloads/gh_linux_driver/cpp/char/fops-2.4/main.ko
+/home/steward/Downloads/gh_linux_driver/cpp/char/fops-2.4/main.o

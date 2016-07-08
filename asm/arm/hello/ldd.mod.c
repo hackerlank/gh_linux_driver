@@ -18,12 +18,6 @@ static const struct modversion_info ____versions[]
 __used
 __attribute__((section("__versions"))) = {
 	{ 0x785844f9, "module_layout" },
-	{ 0x6bc3fbc0, "__unregister_chrdev" },
-	{ 0xe477636a, "__register_chrdev" },
-	{ 0xefd6cf06, "__aeabi_unwind_cpp_pr0" },
-	{ 0x9d669763, "memcpy" },
-	{ 0x5f754e5a, "memset" },
-	{ 0x2e5810c6, "__aeabi_unwind_cpp_pr1" },
 	{ 0x27e1a049, "printk" },
 };
 
@@ -33,4 +27,4 @@ __attribute__((section(".modinfo"))) =
 "depends=";
 
 
-MODULE_INFO(srcversion, "5F94E50C62B8B1FBCF6921C");
+MODULE_INFO(srcversion, "8FAC1AF18E4CB33F7DB9DC1");
